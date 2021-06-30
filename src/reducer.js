@@ -8,9 +8,18 @@ import {
   GET_TOTALS,
 } from './actions';
 
+//items
+import cartItems from './cart-items';
+
 //reducer
 
-export default function reducer(state, action) {
+const initialStore = {
+  cart: cartItems,
+  total: 1500,
+  amount: 10,
+};
+
+export default function reducer(state = initialStore, action) {
   switch (action.type) {
     case CLEAR_CART:
       return { ...state, cart: [] };
