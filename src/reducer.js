@@ -3,7 +3,6 @@ import {
   DECREASE,
   REMOVE,
   CLEAR_CART,
-  GET_TOTAL,
   GET_AMOUNT,
   GET_TOTALS,
 } from './actions';
